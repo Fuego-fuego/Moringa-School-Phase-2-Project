@@ -130,6 +130,32 @@ transition: transform 210ms ease-in;
     width: 1.9rem;
 }
 
+.cart{
+    position:fixed;
+    width:40%;
+    inset:0 0 0 auto;    
+    display:grid;
+    grid-template-rows:4.375rem 1fr 4.375rem ;
+    grid-template-rows: min-content;
+    z-index:999;
+}
+
+.cart-item-img{
+    object-fit: contain;
+    margin-inline-start: 6.3rem;
+    max-width: 35%;    
+    height:10rem;
+}
+
+.hide-cart{
+    display:none;    
+}
+
+.cart > * {
+    width:fit-content;
+    height: fit-content;
+}
+
 /* END OF CART */
 
 /* FOOTER */
